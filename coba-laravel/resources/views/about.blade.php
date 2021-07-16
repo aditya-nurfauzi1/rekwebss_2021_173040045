@@ -9,8 +9,8 @@
 </head>
 <body>
     <h1>Halaman About</h1>
-    <h3><?php echo $nama; ?></h3>
-    <h3><?php echo $email; ?></h3>
-    <img src="img/<?php echo $image; ?>" alt="adit" width="200">
+    <h3>{{$nama}}</h3>
+    <h3>{{$email}}</h3>
+    <img src="img/{{ $image }}" alt="{{ $nama }}" width="200">
 </body>
 </html>
