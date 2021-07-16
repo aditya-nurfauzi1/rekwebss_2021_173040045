@@ -14,13 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return 'Halaman Home';
+    return view('Home');
 });
 
 Route::get('/about', function () {
-    return 'Halaman About';
-});
+    return view('about', [
+    "nama" => "Aditya Muhammad Nurfauzi",
+    "email" => "aditya.nurfauzi09@gmail.com",
+    "image" => "adit.jpg"
+    ]);
+}); 
 
 Route::get('/blog', function () {
-    return 'Halaman Blog';
+    return view('posts');
 });
